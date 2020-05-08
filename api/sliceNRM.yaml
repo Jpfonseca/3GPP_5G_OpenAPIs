@@ -240,7 +240,7 @@ components:
           maxNumberofUEs:
             type: number
           coverageAreaTAList:
-            $ref: '5gcNrm.yaml#/components/schemas/TACList'
+            $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/5gcNrm.yaml?token=AC2JYNXAHHJ7X3IQIIH6IX26XZV4S#/components/schemas/TACList'
           latency:
             type: number
           uEMobilityLevel:
