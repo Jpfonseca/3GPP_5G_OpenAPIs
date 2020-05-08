@@ -57,7 +57,7 @@ components:
       type: object
       properties:
         mcc:
-          $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Mcc'
+          $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Mcc'
         mnc:
           $ref: '#/components/schemas/Mnc'
     PlmnIdList:
@@ -157,9 +157,9 @@ components:
       type: object
       properties:
         ipv4Address:
-          $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Ipv4Addr'
+          $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Ipv4Addr'
         ipv6Address:
-          $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Ipv6Addr'
+          $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Ipv6Addr'
         vlanId:
           type: integer
           minimum: 0
@@ -172,9 +172,9 @@ components:
       type: object
       properties:
         ipv4Address:
-          $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Ipv4Addr'
+          $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Ipv4Addr'
         ipv6Address:
-          $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Ipv6Addr'
+          $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Ipv6Addr'
 
     CellIndividualOffset:
       type: object
@@ -300,12 +300,12 @@ components:
 
     SubNetwork-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
-              $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/SubNetwork-Attr'
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/SubNetwork-ncO'
+              $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/SubNetwork-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/SubNetwork-ncO'
         - type: object
           properties:
             SubNetwork:
@@ -322,12 +322,12 @@ components:
               $ref: '#/components/schemas/EUtranFrequency-Multiple'
     ManagedElement-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
-              $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedElement-Attr'
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedElement-ncO'
+              $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedElement-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedElement-ncO'
         - type: object
           properties:
             GnbDuFunction:
@@ -339,12 +339,12 @@ components:
 
     GnbDuFunction-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-Attr'
                 - type: object
                   properties:
                     gnbDuId:
@@ -359,7 +359,7 @@ components:
                       type: integer
                     victimSetID:
                       type: integer
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
         - type: object
           properties:
             RRMPolicyRatio:
@@ -376,12 +376,12 @@ components:
               $ref: '#/components/schemas/EP_F1U-Multiple'
     GnbCuUpFunction-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-Attr'
                 - type: object
                   properties:
                     gnbId:
@@ -392,7 +392,7 @@ components:
                       $ref: '#/components/schemas/GnbCuUpId'
                     plmnInfoList:
                       $ref: '#/components/schemas/PlmnInfoList'
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
         - type: object
           properties:
             RRMPolicyRatio:
@@ -411,12 +411,12 @@ components:
               $ref: '#/components/schemas/EP_S1U-Multiple'
     GnbCuCpFunction-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-Attr'
                 - type: object
                   properties:
                     gnbId:
@@ -428,14 +428,14 @@ components:
                     plmnId:
                       $ref: '#/components/schemas/PlmnId'
                     x2BlackList:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/DnList'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/DnList'
                     xnWhiteList:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/DnList'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/DnList'
                     x2XnHOBlackList:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/DnList'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/DnList'
                     mappingSetIDBackhaulAddress:
                       $ref: '#/components/schemas/MappingSetIDBackhaulAddress'
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
         - type: object
           properties:
             RRMPolicyRatio:
@@ -454,12 +454,12 @@ components:
               $ref: '#/components/schemas/EP_X2C-Multiple'
     NrCellCu-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-Attr'
                 - type: object
                   properties:
                     cellLocalId:
@@ -467,8 +467,8 @@ components:
                     plmnInfoList:
                       $ref: '#/components/schemas/PlmnInfoList'
                     nRFrequencyRef:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Dn'
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Dn'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
         - type: object
           properties:
             RRMPolicyRatio:
@@ -483,18 +483,18 @@ components:
               $ref: '#/components/schemas/EUtranFreqRelation-Multiple'
     NrCellDu-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-Attr'
                 - type: object
                   properties:
                     administrativeState:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/AdministrativeState'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/AdministrativeState'
                     operationalState:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/OperationalState'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/OperationalState'
                     cellLocalId:
                       type: integer
                     cellState:
@@ -534,14 +534,14 @@ components:
                     nrSectorCarrierRef:
                       type: array
                       items:
-                        $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Dn'
+                        $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Dn'
                     bwpRef:
                       type: array
                       items:
-                        $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Dn'
+                        $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Dn'
                     nRFrequencyRef:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Dn'
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Dn'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
         - type: object
           properties:
             RRMPolicyRatio:
@@ -549,12 +549,12 @@ components:
 
     NRFrequency-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-Attr'
                 - type: object
                   properties:
                     absoluteFrequencySSB:
@@ -567,24 +567,24 @@ components:
                       type: integer
                       minimum: 1
                       maximum: 256
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
     EUtranFrequency-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
-              $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-Attr'
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+              $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
 
     NrSectorCarrier-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-Attr'
                 - type: object
                   properties:
                     txDirection:
@@ -600,20 +600,20 @@ components:
                     bSChannelBwUL:
                       type: integer
                     sectorEquipmentFunctionRef:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Dn'
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Dn'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
         - type: object
           properties:
             CommonBeamformingFunction:
               $ref: '#/components/schemas/CommonBeamformingFunction-Single'
     Bwp-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-Attr'
                 - type: object
                   properties:
                     bwpContext:
@@ -628,10 +628,10 @@ components:
                       type: integer
                     numberOfRBs:
                       type: integer
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
     CommonBeamformingFunction-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
@@ -650,7 +650,7 @@ components:
               $ref: '#/components/schemas/Beam-Multiple'
     Beam-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
@@ -681,7 +681,7 @@ components:
                       maximum: 1800
     RRMPolicyRatio-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
@@ -702,12 +702,12 @@ components:
 
     NRCellRelation-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-Attr'
                 - type: object
                   properties:
                     nRTCI:
@@ -715,35 +715,35 @@ components:
                     cellIndividualOffset:
                       $ref: '#/components/schemas/CellIndividualOffset'
                     adjacentNRCellRef:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Dn'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Dn'
                     nRFrequencyRef:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Dn'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Dn'
                     isRemoveAllowed:
                       type: boolean
                     isHOAllowed:
                       type: boolean
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
     EUtranCellRelation-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-Attr'
                 - type: object
                   properties:
                     adjacentEUtranCellRef:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Dn'
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Dn'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
     NRFreqRelation-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-Attr'
                 - type: object
                   properties:
                     offsetMO:
@@ -800,37 +800,37 @@ components:
                     tReselectionNRSfMedium:
                       $ref: '#/components/schemas/TReselectionNRSf'
                     nRFrequencyRef:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Dn'
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Dn'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
     EUtranFreqRelation-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-Attr'
                 - type: object
                   properties:
                     eUTranFrequencyRef:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Dn'
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Dn'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
 
     ExternalGnbDuFunction-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-Attr'
                 - type: object
                   properties:
                     gnbId:
                       $ref: '#/components/schemas/GnbId'
                     gnbIdLength:
                       $ref: '#/components/schemas/GnbIdLength'
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
         - type: object
           properties:
             EP_F1C:
@@ -839,19 +839,19 @@ components:
               $ref: '#/components/schemas/EP_F1U-Multiple'
     ExternalGnbCuUpFunction-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-Attr'
                 - type: object
                   properties:
                     gnbId:
                       $ref: '#/components/schemas/GnbId'
                     gnbIdLength:
                       $ref: '#/components/schemas/GnbIdLength'
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
         - type: object
           properties:
             EP_E1:
@@ -862,7 +862,7 @@ components:
               $ref: '#/components/schemas/EP_XnU-Multiple'
     ExternalGnbCuCpFunction-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
@@ -877,7 +877,7 @@ components:
                       $ref: '#/components/schemas/GnbIdLength'
                     plmnId:
                       $ref: '#/components/schemas/PlmnId'
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
         - type: object
           properties:
             ExternalNrCellCu:
@@ -890,12 +890,12 @@ components:
               $ref: '#/components/schemas/EP_F1C-Multiple'
     ExternalNrCellCu-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-Attr'
                 - type: object
                   properties:
                     cellLocalId:
@@ -905,47 +905,47 @@ components:
                     plmnIdList:
                       $ref: '#/components/schemas/PlmnIdList'
                     nRFrequencyRef:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Dn'
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Dn'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
     ExternalENBFunction-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-Attr'
                 - type: object
                   properties:
                     eNBId:
                       type: integer
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
         - type: object
           properties:
             ExternalEUTranCell:
               $ref: '#/components/schemas/ExternalEUTranCell-Multiple'
     ExternalEUTranCell-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-Attr'
                 - type: object
                   properties:
                     EUtranFrequencyRef:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Dn'
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/ManagedFunction-ncO'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Dn'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/ManagedFunction-ncO'
 
     EP_XnC-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/EP_RP-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/EP_RP-Attr'
                 - type: object
                   properties:
                     localAddress:
@@ -954,12 +954,12 @@ components:
                       $ref: '#/components/schemas/RemoteAddress'
     EP_E1-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/EP_RP-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/EP_RP-Attr'
                 - type: object
                   properties:
                     localAddress:
@@ -968,12 +968,12 @@ components:
                       $ref: '#/components/schemas/RemoteAddress'
     EP_F1C-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/EP_RP-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/EP_RP-Attr'
                 - type: object
                   properties:
                     localAddress:
@@ -982,12 +982,12 @@ components:
                       $ref: '#/components/schemas/RemoteAddress'
     EP_NgC-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/EP_RP-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/EP_RP-Attr'
                 - type: object
                   properties:
                     localAddress:
@@ -996,12 +996,12 @@ components:
                       $ref: '#/components/schemas/RemoteAddress'
     EP_X2C-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/EP_RP-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/EP_RP-Attr'
                 - type: object
                   properties:
                     localAddress:
@@ -1010,12 +1010,12 @@ components:
                       $ref: '#/components/schemas/RemoteAddress'
     EP_XnU-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/EP_RP-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/EP_RP-Attr'
                 - type: object
                   properties:
                     localAddress:
@@ -1024,12 +1024,12 @@ components:
                       $ref: '#/components/schemas/RemoteAddress'
     EP_F1U-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/EP_RP-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/EP_RP-Attr'
                 - type: object
                   properties:
                     localAddress:
@@ -1038,12 +1038,12 @@ components:
                       $ref: '#/components/schemas/RemoteAddress'
     EP_NgU-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/EP_RP-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/EP_RP-Attr'
                 - type: object
                   properties:
                     localAddress:
@@ -1052,12 +1052,12 @@ components:
                       $ref: '#/components/schemas/RemoteAddress'
     EP_X2U-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/EP_RP-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/EP_RP-Attr'
                 - type: object
                   properties:
                     localAddress:
@@ -1066,12 +1066,12 @@ components:
                       $ref: '#/components/schemas/RemoteAddress'
     EP_S1U-Single:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/EP_RP-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/EP_RP-Attr'
                 - type: object
                   properties:
                     localAddress:
