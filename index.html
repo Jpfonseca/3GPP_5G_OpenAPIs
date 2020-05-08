@@ -39,7 +39,12 @@
     window.onload = function() {
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
-        url: "genericNrm.yaml",
+        urls: [
+          {url:"https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/5gcNrm.yaml?token=AC2JYNUUPHXN6M3W62DTL726XZRTS", name: "3GPP TS 28.541 V16.4.0; 5G NRM, 5GC NRM"},
+          {url:"https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNV6XXSYIBXK6GJ36RS6XZR7K", name:"3GPP TS 28.623 V16.3.0; Generic NRM"},
+          {url:"https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/nrNRM.yaml?token=AC2JYNW447ITUDSU2ZPOA3C6XZR7O", name:"3GPP TS 28.541 V16.4.0; 5G NRM, NR NRM"},
+          {url:"https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/sliceNRM.yaml?token=AC2JYNTKSTCOGYWE36DMEBK6XZR7S", name:"3GPP TS 28.541 V16.4.0; 5G NRM, Slice NRM"}
+        ],
         dom_id: '#swagger-ui',
         deepLinking: true,
         presets: [
