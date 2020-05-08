@@ -175,9 +175,9 @@ components:
         type: object
         properties:
           snssaiList:
-            $ref: 'nrNrm.yaml#/components/schemas/SnssaiList'
+            $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/nrNRM.yaml?token=AC2JYNROO2TNED36JEAIRNS6XZTXC#/components/schemas/SnssaiList'
           plmnIdList:
-            $ref: 'nrNrm.yaml#/components/schemas/PlmnIdList'
+            $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/nrNRM.yaml?token=AC2JYNROO2TNED36JEAIRNS6XZTXC#/components/schemas/PlmnIdList'
           maxNumberofUEs:
             type: number
           latency:
@@ -185,7 +185,7 @@ components:
           uEMobilityLevel:
             $ref: '#/components/schemas/MobilityLevel'
           sst:
-            $ref: 'nrNrm.yaml#/components/schemas/Sst'
+            $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/nrNRM.yaml?token=AC2JYNROO2TNED36JEAIRNS6XZTXC#/components/schemas/Sst'
           resourceSharingLevel:
             $ref: '#/components/schemas/SharingLevel'
           availability:
@@ -234,9 +234,9 @@ components:
         type: object
         properties:
           snssaiList:
-            $ref: 'nrNrm.yaml#/components/schemas/SnssaiList'
+            $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/nrNRM.yaml?token=AC2JYNROO2TNED36JEAIRNS6XZTXC#/components/schemas/SnssaiList'
           plmnIdList:
-            $ref: 'nrNrm.yaml#/components/schemas/PlmnIdList'
+            $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/nrNRM.yaml?token=AC2JYNROO2TNED36JEAIRNS6XZTXC#/components/schemas/PlmnIdList'
           maxNumberofUEs:
             type: number
           coverageAreaTAList:
