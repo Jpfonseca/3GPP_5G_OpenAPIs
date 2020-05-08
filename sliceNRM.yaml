@@ -1,0 +1,300 @@
+openapi: 3.0.0
+info:
+  version: '16.4.0'
+  title: 'TS28.541-Slice NRM'
+  description: '>-
+    OAS 3.0.1 specification of the Slice NRM
+    @ 2020, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI, TTA, TTC).
+    All rights reserved.'
+
+paths: {}
+externalDocs:
+  description: 3GPP TS 28.541 V16.4.0; 5G NRM, Slice NRM
+  url: http://www.3gpp.org/ftp/Specs/archive/28_series/28.541/
+components:
+  schemas:
+
+#------------ Type definitions ---------------------------------------------------
+
+    Float:
+      type: number
+      format: float
+    MobilityLevel:
+      type: string
+      enum:
+        - STATIONARY
+        - NOMADIC
+        - RESTRICTED MOBILITY
+        - FULLY MOBILITY
+    SharingLevel:
+      type: string
+      enum:
+        - SHARED
+        - NON-SHARED
+    Category:
+      type: string
+      enum:
+        - CHARACTER
+        - SCALABILITY
+    Tagging:
+      type: string
+      enum:
+        - PERFORMANCE
+        - FUNCTION
+        - OPERATION
+    Exposure:
+      type: string
+      enum:
+        - API
+        - KPI
+    ServAttrCom:
+      type: object
+      properties:
+        category:
+          $ref: '#/components/schemas/Category'
+        tagging:
+          $ref: '#/components/schemas/Tagging'
+        exposure:
+          $ref: '#/components/schemas/Exposure'
+    Support:
+      type: string
+      enum:
+        - NOT SUPPORTED
+        - SUPPORTED
+    DelayTolerance:
+      type: object
+      properties:
+        servAttrCom:
+          $ref: '#/components/schemas/ServAttrCom'
+        support:
+          $ref: '#/components/schemas/Support'
+    DeterministicComm:
+      type: object
+      properties:
+        servAttrCom:
+          $ref: '#/components/schemas/ServAttrCom'
+        availability:
+          $ref: '#/components/schemas/Support'
+        periodicityList:
+          type: string
+    DLThptPerSlice:
+      type: object
+      properties:
+        servAttrCom:
+          $ref: '#/components/schemas/ServAttrCom'
+        guaThpt:
+          $ref: '#/components/schemas/Float'
+        maxThpt:
+          $ref: '#/components/schemas/Float'
+    DLThptPerUE:
+      type: object
+      properties:
+        servAttrCom:
+          $ref: '#/components/schemas/ServAttrCom'
+        guaThpt:
+          $ref: '#/components/schemas/Float'
+        maxThpt:
+          $ref: '#/components/schemas/Float'
+    ULThptPerSlice:
+      type: object
+      properties:
+        servAttrCom:
+          $ref: '#/components/schemas/ServAttrCom'
+        guaThpt:
+          $ref: '#/components/schemas/Float'
+        maxThpt:
+          $ref: '#/components/schemas/Float'
+    ULThptPerUE:
+      type: object
+      properties:
+        servAttrCom:
+          $ref: '#/components/schemas/ServAttrCom'
+        guaThpt:
+          $ref: '#/components/schemas/Float'
+        maxThpt:
+          $ref: '#/components/schemas/Float'
+    MaxPktSize:
+      type: object
+      properties:
+        servAttrCom:
+          $ref: '#/components/schemas/ServAttrCom'
+        maxsize:
+          type: integer
+    MaxNumberofConns:
+      type: object
+      properties:
+        servAttrCom:
+          $ref: '#/components/schemas/ServAttrCom'
+        nOofConn:
+          type: integer
+    KPIMonitoring:
+      type: object
+      properties:
+        servAttrCom:
+          $ref: '#/components/schemas/ServAttrCom'
+        kPIList:
+          type: string
+    SupportedAccessTech:
+      type: object
+      properties:
+        servAttrCom:
+          $ref: '#/components/schemas/ServAttrCom'
+        accTechList:
+          type: integer
+    UserMgmtOpen:
+      type: object
+      properties:
+        servAttrCom:
+          $ref: '#/components/schemas/ServAttrCom'
+        support:
+          $ref: '#/components/schemas/Support'
+    V2XCommModels:
+      type: object
+      properties:
+        servAttrCom:
+          $ref: '#/components/schemas/ServAttrCom'
+        v2XMode:
+          $ref: '#/components/schemas/Support'
+    TermDensity:
+      type: object
+      properties:
+        servAttrCom:
+          $ref: '#/components/schemas/ServAttrCom'
+        density:
+          type: integer
+    NsInfo:
+      type: object
+      properties:
+        nsInstanceId:
+          type: string
+        nsName:
+          type: string
+    ServiceProfileList:
+      type: object
+      additionalProperties:
+        type: object
+        properties:
+          snssaiList:
+            $ref: 'nrNrm.yaml#/components/schemas/SnssaiList'
+          plmnIdList:
+            $ref: 'nrNrm.yaml#/components/schemas/PlmnIdList'
+          maxNumberofUEs:
+            type: number
+          latency:
+            type: number
+          uEMobilityLevel:
+            $ref: '#/components/schemas/MobilityLevel'
+          sst:
+            $ref: 'nrNrm.yaml#/components/schemas/Sst'
+          resourceSharingLevel:
+            $ref: '#/components/schemas/SharingLevel'
+          availability:
+            type: number
+          delayTolerance:
+            $ref: '#/components/schemas/DelayTolerance'
+          deterministicComm:
+            $ref: '#/components/schemas/DeterministicComm'
+          dLThptPerSlice:
+            $ref: '#/components/schemas/DLThptPerSlice'
+          dLThptPerUE:
+            $ref: '#/components/schemas/DLThptPerUE'
+          uLThptPerSlice:
+            $ref: '#/components/schemas/ULThptPerSlice'
+          uLThptPerUE:
+            $ref: '#/components/schemas/ULThptPerUE'
+          maxPktSize:
+            $ref: '#/components/schemas/MaxPktSize'
+          maxNumberofConns:
+            $ref: '#/components/schemas/MaxNumberofConns'
+          kPIMonitoring:
+            $ref: '#/components/schemas/KPIMonitoring'
+          supportedAccessTech:
+            $ref: '#/components/schemas/SupportedAccessTech'
+          userMgmtOpen:
+            $ref: '#/components/schemas/UserMgmtOpen'
+          v2XModels:
+            $ref: '#/components/schemas/V2XCommModels'
+          coverageArea:
+            type: string
+          termDensity:
+            $ref: '#/components/schemas/TermDensity'
+          activityFactor:
+            $ref: '#/components/schemas/Float'
+          uESpeed:
+            type: integer
+          jitter:
+            type: integer
+          survivalTime:
+            type: string
+          reliability:
+            type: string
+    SliceProfileList:
+      type: object
+      additionalProperties:
+        type: object
+        properties:
+          snssaiList:
+            $ref: 'nrNrm.yaml#/components/schemas/SnssaiList'
+          plmnIdList:
+            $ref: 'nrNrm.yaml#/components/schemas/PlmnIdList'
+          maxNumberofUEs:
+            type: number
+          coverageAreaTAList:
+            $ref: '5gcNrm.yaml#/components/schemas/TACList'
+          latency:
+            type: number
+          uEMobilityLevel:
+            $ref: '#/components/schemas/MobilityLevel'
+          resourceSharingLevel:
+            $ref: '#/components/schemas/SharingLevel'
+
+#------------ Definition of concrete IOCs ----------------------------------------
+
+    NetworkSlice:
+      allOf:
+        - $ref: 'genericNrm.yaml#/components/schemas/Top-Attr'
+        - type: object
+          properties:
+            attributes:
+              allOf:
+                - $ref: 'genericNrm.yaml#/components/schemas/SubNetwork-Attr'
+                - type: object
+                  properties:
+                    networkSliceSubnetRef:
+                      $ref: 'genericNrm.yaml#/components/schemas/Dn'
+                    operationalState:
+                      $ref: 'genericNrm.yaml#/components/schemas/OperationalState'
+                    administrativeState:
+                      $ref: 'genericNrm.yaml#/components/schemas/AdministrativeState'
+                    serviceProfileList:
+                      $ref: '#/components/schemas/ServiceProfileList'
+
+    NetworkSliceSubnet:
+      allOf:
+        - $ref: 'genericNrm.yaml#/components/schemas/Top-Attr'
+        - type: object
+          properties:
+            attributes:
+              allOf:
+                - $ref: 'genericNrm.yaml#/components/schemas/SubNetwork-Attr'
+                - type: object
+                  properties:
+                    managedFunctionRefList:
+                      $ref: 'genericNrm.yaml#/components/schemas/DnList'
+                    networkSliceSubnetRefList:
+                      $ref: 'genericNrm.yaml#/components/schemas/DnList'
+                    operationalState:
+                      $ref: 'genericNrm.yaml#/components/schemas/OperationalState'
+                    administrativeState:
+                      $ref: 'genericNrm.yaml#/components/schemas/AdministrativeState'
+                    nsInfo:
+                      $ref: '#/components/schemas/NsInfo'
+                    sliceProfileList:
+                      $ref: '#/components/schemas/SliceProfileList'
+
+#------------ Definitions in TS 28.541 for TS 28.532 -----------------------------
+
+    resources-sliceNrm:
+      oneOf:
+       - $ref: '#/components/schemas/NetworkSlice'
+       - $ref: '#/components/schemas/NetworkSliceSubnet'
