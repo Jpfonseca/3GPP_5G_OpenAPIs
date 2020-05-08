@@ -175,9 +175,9 @@ components:
         type: object
         properties:
           snssaiList:
-            $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/nrNRM.yaml?token=AC2JYNROO2TNED36JEAIRNS6XZTXC#/components/schemas/SnssaiList'
+            $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/nrNRM.yaml#/components/schemas/SnssaiList'
           plmnIdList:
-            $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/nrNRM.yaml?token=AC2JYNROO2TNED36JEAIRNS6XZTXC#/components/schemas/PlmnIdList'
+            $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/nrNRM.yaml#/components/schemas/PlmnIdList'
           maxNumberofUEs:
             type: number
           latency:
@@ -185,7 +185,7 @@ components:
           uEMobilityLevel:
             $ref: '#/components/schemas/MobilityLevel'
           sst:
-            $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/nrNRM.yaml?token=AC2JYNROO2TNED36JEAIRNS6XZTXC#/components/schemas/Sst'
+            $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/nrNRM.yaml#/components/schemas/Sst'
           resourceSharingLevel:
             $ref: '#/components/schemas/SharingLevel'
           availability:
@@ -234,13 +234,13 @@ components:
         type: object
         properties:
           snssaiList:
-            $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/nrNRM.yaml?token=AC2JYNROO2TNED36JEAIRNS6XZTXC#/components/schemas/SnssaiList'
+            $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/nrNRM.yaml#/components/schemas/SnssaiList'
           plmnIdList:
-            $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/nrNRM.yaml?token=AC2JYNROO2TNED36JEAIRNS6XZTXC#/components/schemas/PlmnIdList'
+            $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/nrNRM.yaml#/components/schemas/PlmnIdList'
           maxNumberofUEs:
             type: number
           coverageAreaTAList:
-            $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/5gcNrm.yaml?token=AC2JYNUUPHXN6M3W62DTL726XZRTS#/components/schemas/TACList'
+            $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/5gcNrm.yaml#/components/schemas/TACList'
           latency:
             type: number
           uEMobilityLevel:
@@ -252,41 +252,41 @@ components:
 
     NetworkSlice:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/SubNetwork-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/SubNetwork-Attr'
                 - type: object
                   properties:
                     networkSliceSubnetRef:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Dn'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Dn'
                     operationalState:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/OperationalState'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/OperationalState'
                     administrativeState:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/AdministrativeState'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/AdministrativeState'
                     serviceProfileList:
                       $ref: '#/components/schemas/ServiceProfileList'
 
     NetworkSliceSubnet:
       allOf:
-        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/Top-Attr'
+        - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/Top-Attr'
         - type: object
           properties:
             attributes:
               allOf:
-                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/SubNetwork-Attr'
+                - $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/SubNetwork-Attr'
                 - type: object
                   properties:
                     managedFunctionRefList:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/DnList'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/DnList'
                     networkSliceSubnetRefList:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/DnList'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/DnList'
                     operationalState:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/OperationalState'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/OperationalState'
                     administrativeState:
-                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml?token=AC2JYNUFQ7FP5AD2XCAUWP26XZTCC#/components/schemas/AdministrativeState'
+                      $ref: 'https://raw.githubusercontent.com/Jpfonseca/3GPP_5G_OpenAPIs/master/api/genericNrm.yaml#/components/schemas/AdministrativeState'
                     nsInfo:
                       $ref: '#/components/schemas/NsInfo'
                     sliceProfileList:
